@@ -48,10 +48,6 @@ body {
   cursor: pointer;
 }
 
-.custom-btn-primary:hover {
-  background: var(--primary-hover);
-}
-
 /* Header */
 .header_area {
   position: absolute;
@@ -412,6 +408,18 @@ body {
   height: 100%;
   border-radius: 25px;
   transition: width 0.3s ease;
+  transform-origin: left;
+  transform: scaleX(0);
+  animation: progressFill 900ms cubic-bezier(.22,.9,.27,1) forwards;
+  /* expects inline style --fill to be set like --fill:0.35; width:100% */
+  width: 100%;
+  will-change: transform;
+}
+
+@keyframes progressFill {
+  to {
+    transform: scaleX(var(--fill, 1));
+  }
 }
 
 .remaining {
@@ -940,9 +948,6 @@ body {
   .card {
     flex-direction: column;
   }
-  .card-img-top {
-    display: none;
-  }
   .card-body {
     padding: 0.9rem;
   }
@@ -1166,6 +1171,7 @@ body {
     width: auto;
   }
 }
+
 /* Footer */
 .footerContainer {
   background: #101840;
@@ -1258,4 +1264,53 @@ body {
   .footerContainer > .container .col-lg-3 img {
     display: none;
   }
+}
+
+/* Animations (lightweight) */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pop {
+  0% { transform: scale(.96); opacity: 0; }
+  60% { transform: scale(1.02); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+@keyframes floatY {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+.animate-fade-up {
+  opacity: 0;
+  transform: translateY(6px);
+  animation: fadeUp 560ms cubic-bezier(.2,.9,.2,1) both;
+  will-change: transform, opacity;
+}
+.animate-pop {
+  opacity: 0;
+  transform: scale(.98);
+  animation: pop 420ms cubic-bezier(.2,.9,.2,1) both;
+  will-change: transform, opacity;
+}
+.animate-float {
+  animation: floatY 4.2s ease-in-out infinite;
+}
+
+/* allow inline style-based delays like style="animation-delay:120ms;" to work */
+.animate-fade-up,
+.animate-pop {
+  animation-duration: inherit;
+  animation-delay: inherit;
+}
+
+/* Ensure animation applies even if inline styles set only delay */
+.animate-fade-up { animation-duration: 560ms; }
+.animate-pop { animation-duration: 420ms; }
+
+/* small accessibility tweak: focus outlines for keyboard users */
+a:focus, button:focus, .accordion-button:focus {
+  outline: 3px solid rgba(137,122,227,0.18);
+  outline-offset: 3px;
 }
