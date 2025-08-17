@@ -13,13 +13,13 @@
       crossorigin="anonymous"
     />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style1.css" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -53,7 +53,9 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav align-items-center justify-content-end w-100">
+            <ul
+              class="navbar-nav align-items-md-center justify-content-end w-100"
+            >
               <li class="nav-item active">
                 <a class="nav-link" href="#">عن بتور</a>
               </li>
@@ -61,7 +63,9 @@
                 <a class="nav-link" href="#">البرامج</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">العناية بالاطراف الصناعية</a>
+                <a class="nav-link" href="./prosthetic.html"
+                  >العناية بالاطراف الصناعية</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">من نحن</a>
@@ -111,39 +115,29 @@
     <section class="hero_section">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-6">
-            <h1>
+          <div class="col-lg-6 main-hero-content">
+            <h1 class="hero_title">
               تقديم الرعاية الصحية لمستخدمي الاطراف الصناعية من الأطفال والشباب
             </h1>
-            <p>
+            <p class="hero_description">
               من خلال مبادرات الرعاية الصحية الخيرية لدينا، نقدم الخدمات الطبية
               الأساسية والعلاجات والدعم للأطفال والشباب مبتوري الاطراف، ورعاية
               رفاههم وتمكينهم من الازدهار.
             </p>
 
-            <div>
-              <button class="custom-btn-primary">التبرع الان</button>
-              <button class="custom-btn">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M19.51 5.85L13.57 2.42C12.6 1.86 11.4 1.86 10.42 2.42L4.49004 5.85C3.52004 6.41 2.92004 7.45 2.92004 8.58V15.42C2.92004 16.54 3.52004 17.58 4.49004 18.15L10.43 21.58C11.4 22.14 12.6 22.14 13.58 21.58L19.52 18.15C20.49 17.59 21.09 16.55 21.09 15.42V8.58C21.08 7.45 20.48 6.42 19.51 5.85ZM11.25 7.75C11.25 7.34 11.59 7 12 7C12.41 7 12.75 7.34 12.75 7.75V13C12.75 13.41 12.41 13.75 12 13.75C11.59 13.75 11.25 13.41 11.25 13V7.75ZM12.92 16.63C12.87 16.75 12.8 16.86 12.71 16.96C12.52 17.15 12.27 17.25 12 17.25C11.87 17.25 11.74 17.22 11.62 17.17C11.49 17.12 11.39 17.05 11.29 16.96C11.2 16.86 11.13 16.75 11.07 16.63C11.02 16.51 11 16.38 11 16.25C11 15.99 11.1 15.73 11.29 15.54C11.39 15.45 11.49 15.38 11.62 15.33C11.99 15.17 12.43 15.26 12.71 15.54C12.8 15.64 12.87 15.74 12.92 15.87C12.97 15.99 13 16.12 13 16.25C13 16.38 12.97 16.51 12.92 16.63Z"
-                    fill="#897AE3"
-                  />
-                </svg>
-
-                +966 675 656
+            <div class="d-flex gap-3 hero-btn-container">
+              <button class="custom-btn-primary w-100">التبرع الان</button>
+              <button
+                class="custom-btn-secondary d-flex align-items-center gap-1 w-100 justify-content-center"
+              >
+                <img src="./assets/warning-2.png" alt="warning" />
+                656 675 966+
               </button>
             </div>
           </div>
           <div class="col-lg-6 text-center">
             <img
-              src="./img/hero_image.png"
+              src="./assets/c4fc7621762a8b5607a441521fd934176831a8c8.png"
               alt="Hero Image"
               class="img-fluid"
             />
@@ -151,6 +145,607 @@
         </div>
       </div>
     </section>
+
+    <!-- second section -->
+    <div class="container mt-5 pt-3">
+      <div class="second_section_titles">
+        <p>تعزيز صحة الأطفال والشباب مبتوري الاطراف وسعادتهم</p>
+        <h1>
+          تحسين صحة مبتوري الاطراف <br />
+          من خلال تزويدهم بالاطراف الصناعية
+        </h1>
+      </div>
+
+      <div class="row text-center mt-5 gap-3 second_section_col">
+        <div class="col">
+          <img src="./assets/Group 1000004374.png" alt="" />
+          <h3>الرعاية الصحية الأولية</h3>
+          <p>
+            تقديم رعاية طبية حيوية مصممة خصيصًا لتلبية الاحتياجات الفريدة
+            لمبتوري الاطراف، وضمان صحتهم ورفاههم بشكل عام.
+          </p>
+        </div>
+        <div class="col">
+          <img src="./assets/Group 1000004374.png" alt="" />
+          <h3>الدعم المالي</h3>
+          <p>
+            التمويل لضمان حصول مبتوري الاطراف علي الاطراف الصناعية من أجل النمو
+            والتطور الصحي.
+          </p>
+        </div>
+        <div class="col">
+          <img src="./assets/Group 1000004374.png" alt="" />
+          <h3>الرعاية الصحية الأولية</h3>
+          <p>
+            دعم الصحة النفسية من خلال خدمات استشارية شاملة لمبتوري الاطراف،
+            ومصادر تعليمية.
+          </p>
+        </div>
+      </div>
+
+      <section class="mt-5 pt-1 text-center second_section_companies">
+        <p class="my-5 py-1">تعزيز الوحدة والتعاون مع شركائنا المتفانين</p>
+        <img
+          class="w-100"
+          src="./assets/Frame 1000004376.png"
+          alt="companies"
+        />
+      </section>
+    </div>
+
+    <!-- third section -->
+    <div class="mt-5 pt-3 third_section">
+      <div class="container">
+        <div class="third_section_titles">
+          <p>برامج الرعاية الصحية لمبتوري الاطراف</p>
+          <h1>
+            الأسباب والبرامج الحيوية في انتظار تبرعاتكم، ادعموا مبتوري الاطراف
+          </h1>
+        </div>
+        <div class="row text-center mt-5 gap-3 second_section_col">
+          <div class="col">
+            <div class="card m-auto" style="width: 80%">
+              <img
+                src="./assets/Rectangle 4.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">أرجل صناعية T-4040</h5>
+                <p class="card-text">
+                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                  سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                  الفقرات في الصفحة التي يقرأها.
+                </p>
+                <hr />
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 35%"></div>
+                  </div>
+                  <div class="progress-labels">
+                    <span>ريال 900</span> <span>2</span>
+                  </div>
+                  <div class="d-flex justify-content-between mx-2">
+                    <p class="remaining">من 1900 ر.س</p>
+                    <p class="remaining">متبرعين</p>
+                  </div>
+                </div>
+                <div class="checkoutBtn">
+                  <button class="cart-button">
+                    <img src="./assets/shopping-cart.png" alt="shopping-cart" />
+                  </button>
+                  <button class="buy-button">تبرع الأن</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card m-auto" style="width: 80%">
+              <img
+                src="./assets/Rectangle 44.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">أرجل صناعية T-4040</h5>
+                <p class="card-text">
+                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                  سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                  الفقرات في الصفحة التي يقرأها.
+                </p>
+                <hr />
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 35%"></div>
+                  </div>
+                  <div class="progress-labels">
+                    <span>ريال 900</span> <span>2</span>
+                  </div>
+                  <div class="d-flex justify-content-between mx-2">
+                    <p class="remaining">من 1900 ر.س</p>
+                    <p class="remaining">متبرعين</p>
+                  </div>
+                </div>
+                <div class="checkoutBtn">
+                  <button class="cart-button">
+                    <img src="./assets/shopping-cart.png" alt="shopping-cart" />
+                  </button>
+                  <button class="buy-button">تبرع الأن</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mt-5 pb-5">
+          <button
+            class="custom-btn-primary"
+            style="margin: auto; text-align: center"
+          >
+            عرض جميع الحالات
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- fourth section -->
+    <div class="mt-5 fourth_section_container">
+      <div class="container">
+        <div class="row text-center mt-5 gap-3">
+          <div class="col">
+            <img class="m-auto" src="./assets/wheelchair.png" alt="" />
+            <h3>30</h3>
+            <p>توفير الأجهزة التعويضية المساندة</p>
+          </div>
+          <div class="col">
+            <img class="m-auto" src="./assets/hormones.png" alt="" />
+            <h3>600</h3>
+            <p>تأمين مواد استهلاكية (السليكون - لاينر)</p>
+          </div>
+          <div class="col">
+            <img class="m-auto" src="./assets/physiotherapy.png" alt="" />
+            <h3>800</h3>
+            <p>جلسات العلاج الطبيعي</p>
+          </div>
+          <div class="col">
+            <img class="m-auto" src="./assets/artificial-limb.png" alt="" />
+            <h3>90</h3>
+            <p>توفير الاطراف الصناعية</p>
+          </div>
+        </div>
+
+        <div class="fourth_section_titles">
+          <p>انضم إلينا في إحداث تأثير إيجابي</p>
+          <h1>
+            لماذا أخترتنا؟ اكتشف ما لا مثيل له تأثير اختيار جمعيتنا الخيرية
+          </h1>
+          <img
+            src="./assets/image 12.png"
+            class="backgroundImage"
+            alt="backgroundImage"
+          />
+        </div>
+
+        <div class="accordion row mt-5" id="accordionExample">
+          <div class="col gap-3">
+            <div class="accordion-item">
+              <div class="accordion-item-container">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    1-كيف يمكنني التبرع لدعم مبتوري الاطراف؟
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      يمكنك التبرع بشكل آمن من خلال موقعنا على الانترنت أو
+                      الاتصال بنا للحصول على خيارات أخرى.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-item-container">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    2- هل يمكنني التطوع بدون خلفية طبية؟
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      يمكنك التبرع بشكل آمن من خلال موقعنا على الانترنت أو
+                      الاتصال بنا للحصول على خيارات أخرى.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-item-container">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    3-هل تعمل على المستوى الدولي؟
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      يمكنك التبرع بشكل آمن من خلال موقعنا على الانترنت أو
+                      الاتصال بنا للحصول على خيارات أخرى.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col gap-3">
+            <div class="accordion-item">
+              <div class="accordion-item-container">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    4- ما هي الخدمات التي تقدمها لمبتوري الاطراف؟
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      يمكنك التبرع بشكل آمن من خلال موقعنا على الانترنت أو
+                      الاتصال بنا للحصول على خيارات أخرى.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-item-container">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    5- ما هي الخدمات التي تقدمها لمبتوري الاطراف؟
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      يمكنك التبرع بشكل آمن من خلال موقعنا على الانترنت أو
+                      الاتصال بنا للحصول على خيارات أخرى.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-item-container">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                  >
+                    6- ما هي الخدمات التي تقدمها لمبتوري الاطراف؟
+                  </button>
+                </h2>
+                <div
+                  id="collapseSix"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      يمكنك التبرع بشكل آمن من خلال موقعنا على الانترنت أو
+                      الاتصال بنا للحصول على خيارات أخرى.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fifth section -->
+    <div class="mt-5 fifth_section">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="">
+            <div class="fifth_section_titles">
+              <p>بناء الروابط من خلال أعمال اللطف</p>
+              <h1>اكتشف آخر التحديثات لدينا وقصص التأثير</h1>
+            </div>
+          </div>
+
+          <div class="">
+            <button class="custom-btn-primary" id="mobileBtn">
+              عرض جميع المقالات
+            </button>
+          </div>
+        </div>
+
+        <div class="row gap-3">
+          <div class="card col" style="width: 18rem; margin: auto">
+            <img
+              src="./assets/Rectagngle 4.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                تحويل المجتمعات من خلال المشاريع المستدامة
+              </h5>
+              <p class="card-text">
+                العمل معًا لتحقيق أهداف مشتركة يقوي الروابط بين المجتمع,
+                المجتمعات المتماسكة اجتماعياً مجهزة بشكل أفضل للتغلب على العقبات
+                والتكيف
+              </p>
+              <button class="custom-btn-primary">قراءة أكثر</button>
+            </div>
+          </div>
+
+          <div class="card col" style="width: 18rem; margin: auto">
+            <img
+              src="./assets/Rectangledd 4.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                تحويل المجتمعات من خلال المشاريع المستدامة
+              </h5>
+              <p class="card-text">
+                العمل معًا لتحقيق أهداف مشتركة يقوي الروابط بين المجتمع,
+                المجتمعات المتماسكة اجتماعياً مجهزة بشكل أفضل للتغلب على العقبات
+                والتكيف
+              </p>
+              <button class="custom-btn-primary">قراءة أكثر</button>
+            </div>
+          </div>
+
+          <div class="card col" style="width: 18rem; margin: auto">
+            <img
+              src="./assets/Rectangle dds4.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                تحويل المجتمعات من خلال المشاريع المستدامة
+              </h5>
+              <p class="card-text">
+                العمل معًا لتحقيق أهداف مشتركة يقوي الروابط بين المجتمع,
+                المجتمعات المتماسكة اجتماعياً مجهزة بشكل أفضل للتغلب على العقبات
+                والتكيف
+              </p>
+              <button class="custom-btn-primary">قراءة أكثر</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sixth section -->
+    <div class="mt-5 container">
+      <div class="sixth_section_titles">
+        <p>اتصل بنا</p>
+        <h1>نحن نقدم المساعدة والمساعدة المخصصة لمبتوري الاطراف</h1>
+      </div>
+
+      <div class="row mt-5 gap-5">
+        <span class="col">
+          <div class="d-flex gap-3 align-items-center contactDetails">
+            <div>
+              <img src="./assets/Group 10000f04374.png" alt="location" />
+            </div>
+            <div>
+              <h2>الرياض - حي المروج</h2>
+              <p>
+                ابحث عن العناوين وساعات العمل و المزيد لكل من مواقعنا والشركات
+                التابعة لنا.
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3 align-items-center contactDetails">
+            <div>
+              <img src="./assets/Group 10000f05891.png" alt="location" />
+            </div>
+            <div>
+              <h2>0112777900 / 0552300321</h2>
+              <p>
+                ابحث عن العناوين وساعات العمل و المزيد لكل من مواقعنا والشركات
+                التابعة لنا.
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3 align-items-center contactDetails">
+            <div>
+              <img src="./assets/Group 100f0004374.png" alt="location" />
+            </div>
+            <div>
+              <h2>info@a-ca.sa</h2>
+              <p>
+                قبل أن تترك لنا خطًا أو تلتقط الهاتف،قد تجد إجابة في قائمة
+                الأسئلة الشائعة لدينا.
+              </p>
+            </div>
+          </div>
+        </span>
+
+        <span class="col formContainer">
+          <h1>هل لديك سؤال أو تعليق؟</h1>
+          <p>
+            تواصل معنا من خلال النموذج أدناه ودعنا نبدأ محادثة حول إحداث فرق.
+          </p>
+
+          <form>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                required
+                placeholder="الاسم"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                required
+                placeholder="البريد الإلكتروني"
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                id="message"
+                rows="3"
+                required
+                placeholder="الرسالة"
+              ></textarea>
+            </div>
+            <button type="submit" class="custom-btn-primary w-100">
+              إرسال
+            </button>
+          </form>
+        </span>
+      </div>
+    </div>
+
+    <!-- seventh section -->
+    <div class="mt-5 seventh_section">
+      <img class="seventh_section_image" src="./assets/imagef 12.png" />
+      <div class="container">
+        <div class="seventh_section_titles">
+          <p>امنح هدية الصحة: ​​تبرع الي مبتوري الاطراف</p>
+          <h1>تحويل الحياة: دعم الصحة النفسية لمبتوري الاطراف مع تبرعك</h1>
+        </div>
+
+        <div class="text-center mt-5">
+          <button class="custom-btn-primary px-5">تبرع الأن</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footerContainer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <img src="./assets/image 317.png" />
+            <p>
+              جمعية رسمية صحية متخصصة بمبتوري الأطراف وتقدم لهم خدمات تساعدهم
+              على مواجهة التحديات والصعوبات وتساهم في تحسين جودة حياتهم، وتمكين
+              قدراتهم الذاتية في خدمة أنفسهم وأسرهم دون الحاجة لمساعة الآخرين
+            </p>
+            <div class="d-flex gap-3 social-links">
+              <a href="#"><img src="./assets/Pintrest.png" alt="Pintrest" /></a>
+              <a href="#"><img src="./assets/whatsapp.png" alt="whatsapp" /></a>
+              <a href="#"><img src="./assets/facebook.png" alt="facebook" /></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 FooterLists">
+            <h5>المميزات</h5>
+            <p><a href="#">عن بتور</a></p>
+            <p><a href="#">البرامج</a></p>
+            <p><a href="#">العناية بالاطراف الصناعية</a></p>
+            <p><a href="#">المركز الاعلامي</a></p>
+          </div>
+          <div class="col-lg-3 col-md-6 FooterLists">
+            <h5>عن الشركة</h5>
+            <p><a href="#">الاسئلة الشائعة</a></p>
+            <p><a href="#">من نحن</a></p>
+            <p><a href="#">تواصل معنا</a></p>
+          </div>
+          <div class="col-lg-3 col-md-6 FooterLists">
+            <h5>تواصل معنا</h5>
+            <p><a href="#">الرياض - حي المروج</a></p>
+            <p><a href="#">APP@Gmail.com</a></p>
+            <p><a href="#">(+966) 8896-2220</a></p>
+          </div>
+        </div>
+
+        <hr />
+        <div
+          class="d-flex justify-content-between align-items-center pt-2 footerLastSection"
+        >
+          <div>
+            <p>© 2024 APP. جميع الحقوق محفوظة</p>
+          </div>
+
+          <span>
+            <a href="#">سياسة الخصوصية </a>
+            <a href="#">الشروط والاحكام </a>
+          </span>
+        </div>
+      </div>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script

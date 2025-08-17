@@ -1,11 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style2.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body dir="rtl">
+    <!-- Header -->
+    <header class="header_area">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid px-0">
+          <a class="navbar-brand me-0" href="#">
+            <svg
+              width="151"
+              height="64"
+              viewBox="0 0 151 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <rect width="150.366" height="63.5872" fill="#eee" />
+            </svg>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul
+              class="navbar-nav align-items-md-center justify-content-end w-100"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">عن بتور</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">البرامج</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="./prosthetic.html"
+                  >العناية بالاطراف الصناعية</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">من نحن</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">المقالات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">المركز الاعلامي</a>
+              </li>
+              <li class="nav-item d-lg-flex align-items-center">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="me-2 ms-0 cart-icon"
+                >
+                  <path
+                    d="M2 1.75H3.74023C4.32535 1.75006 4.8803 1.99821 5.27734 2.4248H5.27832C5.50044 2.67166 5.66122 2.95434 5.74902 3.26562L5.85156 3.62988H18.7197C19.5392 3.62988 20.2919 3.93289 20.8643 4.48047L20.9766 4.59375C21.5512 5.22274 21.8401 6.03428 21.7715 6.90039V6.9043L21.2314 14.4043L21.2305 14.4102C21.1365 15.9712 19.7605 17.2498 18.1904 17.25H7.54004C6.69104 17.25 5.87474 16.8891 5.29883 16.2617C4.72254 15.6338 4.42969 14.7913 4.49805 13.9414L5.32715 3.9873L5.32812 3.98828C5.37284 3.52625 5.2067 3.08855 4.90918 2.7627C4.59894 2.42298 4.17218 2.25012 3.73047 2.25H2C1.86614 2.25 1.75 2.13386 1.75 2C1.75 1.86614 1.86614 1.75 2 1.75ZM5.78027 4.58789L5.00195 13.9766C4.9398 14.6976 5.17757 15.3849 5.65918 15.916C6.14759 16.4545 6.82446 16.7402 7.54004 16.7402H18.1904C19.495 16.74 20.6483 15.6552 20.748 14.3584L20.749 14.3555L21.2891 6.85547V6.85352C21.3377 6.13481 21.105 5.43406 20.6113 4.91504C20.1235 4.39257 19.4515 4.11047 18.7305 4.11035H5.78027V4.58789Z"
+                    fill="#101840"
+                    stroke="#101840"
+                  />
+                  <path
+                    d="M16.25 22.75C15.15 22.75 14.25 21.85 14.25 20.75C14.25 19.65 15.15 18.75 16.25 18.75C17.35 18.75 18.25 19.65 18.25 20.75C18.25 21.85 17.35 22.75 16.25 22.75ZM16.25 20.25C15.97 20.25 15.75 20.47 15.75 20.75C15.75 21.03 15.97 21.25 16.25 21.25C16.53 21.25 16.75 21.03 16.75 20.75C16.75 20.47 16.53 20.25 16.25 20.25Z"
+                    fill="#101840"
+                  />
+                  <path
+                    d="M8.25 22.75C7.15 22.75 6.25 21.85 6.25 20.75C6.25 19.65 7.15 18.75 8.25 18.75C9.35 18.75 10.25 19.65 10.25 20.75C10.25 21.85 9.35 22.75 8.25 22.75ZM8.25 20.25C7.97 20.25 7.75 20.47 7.75 20.75C7.75 21.03 7.97 21.25 8.25 21.25C8.53 21.25 8.75 21.03 8.75 20.75C8.75 20.47 8.53 20.25 8.25 20.25Z"
+                    fill="#101840"
+                  />
+                  <path
+                    d="M21 8.75H9C8.59 8.75 8.25 8.41 8.25 8C8.25 7.59 8.59 7.25 9 7.25H21C21.41 7.25 21.75 7.59 21.75 8C21.75 8.41 21.41 8.75 21 8.75Z"
+                    fill="#101840"
+                  />
+                </svg>
+                <button class="custom-btn-primary me-2">تسجيل الدخول</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero_section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 main-hero-content">
+            <span>طريقك إلى التنقل</span>
+            <h1 class="hero_title">الرائدة في مجال توفير الرعاية التعويضية</h1>
+            <p class="hero_description">
+              بفضل فريقنا من الخبراء المتفانين وأحدث التقنيات، نحن هنا لمساعدتك
+              على استعادة استقلاليتك وإعادة اكتشاف قدراتك.
+            </p>
+
+            <div class="d-flex gap-3 hero-btn-container">
+              <button class="custom-btn-primary w-100">اكتشف</button>
+            </div>
+
+            <div class="d-flex gap-5 w-100 mt-5 percentage">
+              <div>
+                <h1>98%</h1>
+                <p>راحة الجهاز</p>
+              </div>
+              <div>
+                <h1>1.5k+</h1>
+                <p>قصص النجاح</p>
+              </div>
+              <div>
+                <h1>95%</h1>
+                <p>النجاح المناسب</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center">
+            <img
+              src="./assets/imagce 18.png"
+              alt="Hero Image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- second section -->
+<div class="mt-5 pt-3 container">
+  <div class="row">
+    <div class="col firstHalf">
+      <div class="second_section_titles">
+        <p>رعاية الاشخاص ذو الاطراف الصناعية</p>
+        <h1>ارفع قدرتك على الحركة: منصة بتور</h1>
+        <span
+          >بفضل فريقنا من الخبراء المتفانين وأحدث التقنيات، نحن هنا لمساعدتك
+          على استعادة استقلاليتك وإعادة اكتشاف قدراتك.</span
+        >
+      </div>
+      <img src="./assets/image 1dd9.png" alt="image 1dd9" />
+    </div>
+
+    <div class="col secondHalf">
+      <img src="./assets/image 2d1.png" alt="image 2d1" />
+      <p>
+        عندما تختار منصة بتور، فإنك تصبح جزءًا من مجتمع داعم من الأفراد
+        الذين تغلبوا على تحديات مماثلة. ولهذا السبب نحن لسنا مجرد مركز طبي؛
+        نحن شركاؤك في رحلتك. سيقدم لك موظفونا المتعاطفون الدعم والتوجيه الذي
+        تحتاجه في كل خطوة على الطريق.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+    <!-- third section -->
+    <div class="mt-5 pt-3 third_section">
+      <div class="container">
+        <div class="third_section_titles">
+          <p>رعاية الحالة النفسية لمستخدمي الاطراف الصناعية</p>
+          <h1>الحصول على الدعم النفسي من منصة بتور</h1>
+          <span>
+            التحدث مع الطبيب المعالج قبل تركيب الطرف الصناعي يعزز الحالة النفسية
+            للمريض، ويمده بالقوة اللازمة لمواصلة حياته الجديدة والتغلب على
+            الصراعات النفسية والمخاوف الداخلية، لأن الطبيب سيقوم بشرح الكثير من
+            المعلومات عن الأطراف الصناعية للمريض، وسوف يتمكن المريض من طرح
+            الأسئلة المبهمة التي ترهقه وتسبب له المخاوف من الأطراف الصناعية.
+          </span>
+          <img src="./assets/Group 1000005912.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- seventh section -->
+    <div class="mt-5 container">
+      <div class="seventh_section_titles">
+        <p>امنح هدية الصحة: ​​تبرع الي مبتوري الاطراف</p>
+        <h1>تحويل الحياة: دعم الصحة النفسية لمبتوري الاطراف مع تبرعك</h1>
+      </div>
+
+      <div class="text-center mt-5">
+        <button class="custom-btn-primary px-5">تبرع الأن</button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footerContainer mt-5 pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <img src="./assets/image 317.png" />
+            <p>
+              جمعية رسمية صحية متخصصة بمبتوري الأطراف وتقدم لهم خدمات تساعدهم
+              على مواجهة التحديات والصعوبات وتساهم في تحسين جودة حياتهم، وتمكين
+              قدراتهم الذاتية في خدمة أنفسهم وأسرهم دون الحاجة لمساعة الآخرين
+            </p>
+            <div class="d-flex gap-3 social-links">
+              <a href="#"><img src="./assets/Pintrest.png" alt="Pintrest" /></a>
+              <a href="#"><img src="./assets/whatsapp.png" alt="whatsapp" /></a>
+              <a href="#"><img src="./assets/facebook.png" alt="facebook" /></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 FooterLists">
+            <h5>المميزات</h5>
+            <p><a href="#">عن بتور</a></p>
+            <p><a href="#">البرامج</a></p>
+            <p><a href="#">العناية بالاطراف الصناعية</a></p>
+            <p><a href="#">المركز الاعلامي</a></p>
+          </div>
+          <div class="col-lg-3 col-md-6 FooterLists">
+            <h5>عن الشركة</h5>
+            <p><a href="#">الاسئلة الشائعة</a></p>
+            <p><a href="#">من نحن</a></p>
+            <p><a href="#">تواصل معنا</a></p>
+          </div>
+          <div class="col-lg-3 col-md-6 FooterLists">
+            <h5>تواصل معنا</h5>
+            <p><a href="#">الرياض - حي المروج</a></p>
+            <p><a href="#">APP@Gmail.com</a></p>
+            <p><a href="#">(+966) 8896-2220</a></p>
+          </div>
+        </div>
+
+        <hr />
+        <div
+          class="d-flex justify-content-between align-items-center pt-2 footerLastSection"
+        >
+          <div>
+            <p>© 2024 APP. جميع الحقوق محفوظة</p>
+          </div>
+
+          <span>
+            <a href="#">سياسة الخصوصية </a>
+            <a href="#">الشروط والاحكام </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
